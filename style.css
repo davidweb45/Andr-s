@@ -1,0 +1,237 @@
+/* ===== RESETEO GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #fff;
+  background: linear-gradient(270deg, #001c55, #0040ff, #007bff);
+  background-size: 600% 600%;
+  animation: gradientMove 15s ease infinite;
+}
+
+/* ===== ANIMACIÓN DEL DEGRADADO ===== */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===== ENCABEZADO ===== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 50, 0.8);
+  backdrop-filter: blur(10px);
+  color: white;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ===== NAVEGACIÓN ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00c2ff;
+}
+
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 180px 40px 120px;
+  text-align: left;
+  color: white;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text-section h2 {
+  font-size: 1.8rem;
+  color: #00c2ff;
+  margin-bottom: 10px;
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.text-section span {
+  color: #00c2ff;
+}
+
+.text-section p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+.btn {
+  display: inline-block;
+  background: #00c2ff;
+  color: #001c55;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #0040ff;
+}
+
+.image-section img {
+  width: 350px;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 20px rgba(0, 64, 255, 0.5));
+}
+
+/* ===== SERVICIOS ===== */
+.services {
+  padding: 100px 40px;
+  background: white;
+  color: #001c55;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #001c55;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-header {
+  background: linear-gradient(90deg, #0040ff, #00c2ff);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.service-header:hover {
+  background: linear-gradient(90deg, #00a2ff, #007bff);
+}
+
+.service-content {
+  background: #f9f9ff;
+  color: #333;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.expandable.active .service-content {
+  max-height: 200px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.service-cta {
+  display: inline-block;
+  margin-top: 15px;
+  background: #0040ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.service-cta:hover {
+  background: #002b6b;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.footer {
+  background: #001c55;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.social-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.social-logo:hover {
+  transform: scale(1.15);
+}
+
+
+
+
+
+
+
+
+
+
